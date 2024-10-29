@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tebak Angka</h1>
+        <p>Saya telah memilih angka antara 1 dan 100. Coba tebak!</p>
+        
+        <label for="difficulty">Pilih Tingkat Kesulitan:</label>
+        <select id="difficulty">
+            <option value="easy">Mudah (1-50)</option>
+            <option value="medium">Sedang (1-100)</option>
+            <option value="hard">Sulit (1-200)</option>
+        </select>
+        
+        <input type="number" id="guess" placeholder="Masukkan tebakanmu" />
+        <button id="submit">Kirim Tebakan</button>
+        <p id="message"></p>
+        <p id="history">Histori Tebakan: </p>
+        <p id="stats">Total Permainan: 0 | Kemenangan: 0</p>
+        <button id="restart" style="display: none;">Main Lagi</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
